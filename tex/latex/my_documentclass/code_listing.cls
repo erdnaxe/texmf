@@ -1,28 +1,12 @@
 % Document Class for code listings
+% Inherit from my_article document class
 % Made by Alexandre IOOSS
 % Latest revision available on https://gihub.com/erdnaxe/texmf
 % Public Domain
 
-\NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{code_listing}[2018/01/14 Layout for code listings]
 
-\LoadClass{article}
-
-% Encoding
-\RequirePackage[utf8]{inputenc}
-
-% French document
-\RequirePackage[french]{babel}
-
-% Font
-\RequirePackage[upright]{fourier}
-\RequirePackage{mathtools}
-
-% Hyperlinks
-\RequirePackage[hidelinks]{hyperref}
-
-% Document size
-\RequirePackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\LoadClass{my_article}
 
 % Code listing
 \RequirePackage{listings}
@@ -63,19 +47,5 @@
   {»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
 }
 
-% Document metadata
-\newcommand{\getthetitle}{No title}
-\renewcommand{\title}[1]{\renewcommand{\getthetitle}{#1}}
-\newcommand{\gettheauthor}{No author}
-\renewcommand{\author}[1]{\renewcommand{\gettheauthor}{#1}}
-
-% Top and bottom bar
-\RequirePackage{fancyhdr}
-\RequirePackage{lastpage}
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{1pt}
-\renewcommand{\footrulewidth}{1pt}
+% Top and bottom decoration
 \lhead{\textbf{\getthetitle}}
-\rfoot{Page \thepage~sur~\pageref{LastPage}}
-\lfoot{\gettheauthor}
