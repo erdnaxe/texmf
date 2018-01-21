@@ -17,3 +17,15 @@
 \lhead{\textbf{\getthetitle}}
 \cfoot{PSI}
 \lfoot{Lycée Blaise Pascal à Orsay} % Super prépa !
+
+% Theorem environment
+\RequirePackage{amsthm}
+
+\theoremstyle{plain}
+\newtheorem*{theorem}{Théorème}
+\newtheorem*{theoremhp}{Théorème (HP)}
+\newtheorem*{corollary}{Corollaire}
+\newtheorem*{property}{Propriété}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Définition}
