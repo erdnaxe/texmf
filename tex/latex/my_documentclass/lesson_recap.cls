@@ -18,6 +18,10 @@
 \cfoot{PSI}
 \lfoot{Lycée Blaise Pascal à Orsay} % Super prépa !
 
+% Save some space with lists
+\usepackage{enumitem}
+\setlist{leftmargin=5.5mm}
+
 % Theorem environment
 \RequirePackage{amsthm}
 
