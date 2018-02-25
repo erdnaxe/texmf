@@ -27,6 +27,10 @@
 % Multicolums
 \RequirePackage{multicol}
 
+% Remove indentation
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
 % Print only the title with maketitle
 \renewcommand{\maketitle}{\begin{center} {\huge \getthetitle} \end{center}}
 
