@@ -47,5 +47,6 @@
   {»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
 }
 
-% Top and bottom decoration
-\lhead{\textbf{\getthetitle}}
+% Bottom decoration
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}
